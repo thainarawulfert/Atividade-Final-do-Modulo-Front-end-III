@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rick and Morty</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+
+<body>
+    <div class="container-sm-fluid container_header">
+
+
+        <div class="row row_top">
+            <div class="col-sm col_img">
+                <a href="https://rickandmortyapi.com" target="_blank" class="animation_a">
+                    <img src="./src/image/logo-mini.png" alt="logo-mini-rickAndMorty" class="float-start rounded">
+                </a>
+            </div>
+            <div class="col-12 text-center">
+                <h1 class="display-3 fw-bold h1_animation">API de Rick and Morty</h1>
+            </div>
+            <div class="col-sm-10 mb-5">
+                <div class="input-group mt-5 offset-1 isearch">
+                    <input id="inputBuscar" type="text" class="form-control" placeholder="Pesquisar">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img
+                            src="./src/image/search.svg" alt="icon-search"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cloud">
+        <img src="./src/image/fumaca-png.webp" alt="" class="img_cloud">
+    </div>
+    <div id="containerPersonagens" class="container-xs container_body ms-5">
+
+    </div>
+
+    <div class="container text-center container_btn">
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-success" id="botaoAnterior">Anterior</button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-outline-success" id="botaoProximo">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container_footer fixed-bottom">
+        <div class="row row_footer position-relative align-items-end ">
+            <div class="col-sm-12 card-footer col_footer">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Personagens: <span
+                                id="quantidadePersonagens"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Localização: <span id="localizacao"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Episódios: <span id="episodios"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 offset-3 card-footer col_footer">
+                <p class="pt-5 ps-5">Desenvolvido por <strong> <a href="https://github.com/thainarawulfert"
+                            target="_blank">Thainara Wulfert</a> </strong> em 2023</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="./src/script/api.js"></script>
+</body>
+
+</html>
